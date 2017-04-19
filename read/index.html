@@ -19,7 +19,7 @@
 
 <p id="textbit" style="font-family:arial;color:red;font-size:20px;"></p>
 		<script type="text/javascript">
-		var sound = new Audio("barcode.wav");
+		var sound = new Audio("../barcode.wav");
 
 (function() {
 
@@ -44,7 +44,8 @@
     },
     function(stream) {
       if (navigator.mozGetUserMedia) {
-        video.mozSrcObject = stream;
+        video.moz
+	      Object = stream;
       } else {
         var vendorURL = window.URL || window.webkitURL;
         video.src = vendorURL.createObjectURL(stream);
